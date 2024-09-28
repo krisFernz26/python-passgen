@@ -30,7 +30,7 @@ Username already exists!
 ```
 
 users.json
-<br / >
+<br />
 ```
 {
 	"testing": "1ce924ee13f8f1c7bd8516d546cc45212069a578733f96e81a05885f0f2744fc", 
