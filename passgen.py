@@ -3,6 +3,8 @@ import random
 import hashlib
 import os
 import json
+import stat
+import errno
 from pathlib import Path
 
 # Current Working Directory
@@ -57,10 +59,23 @@ def save_file(password_dict: dict):
 def get_users():
     # Return an empty dictionary if file does not exist
     if not os.path.exists(complete_name):
+        create_file()
         return {}
+    # Check if current user has appropriate permissions
+    try:
+        open(complete_name).close()
+    except IOError as err:
+        if err.errno == errno.EACCES:
+            raise Exception(err)
     users_file = open(complete_name, 'r')
     password_dict = json.loads(users_file.read())
     users_file.close()
     return password_dict
+
+### Create the users file if it doesn't exist
+def create_file():
+    users_file = open(complete_name, 'w').close()
+    # Change file permisions to allow only the owner to read, write, and execute the file.
+    os.chmod(complete_name, stat.S_IRWXU)
 
 generate_password()
