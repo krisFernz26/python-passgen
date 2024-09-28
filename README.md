@@ -5,11 +5,14 @@ A randomized password generator that encrypts the generated password and stores 
 
 ## Features
 
-- Generate a random passowrd
+- Generate a random password
 - SHA256 Encryption
 - Save user passwords to a file
 
 ## Screenshots
 
+Entering an unused username with generate and store a passworda.
 ![Usage](https://drive.google.com/uc?export=view&id=1PsnMoHgkWkukI1rgispKUU6yGh3V7zvp)
 
+Entering an already existing user name will end the script.
+![Usage](https://drive.google.com/uc?export=view&id=1ZocH57VnREIPCaWAeqJGFduiLJ3ypaSf)
