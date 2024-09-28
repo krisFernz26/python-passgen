@@ -11,8 +11,10 @@ A randomized password generator that encrypts the generated password and stores 
 
 ## Screenshots
 
-Entering an unused username with generate and store a passworda.
+Entering an unused username with generate and store a password.
+<br />
 ![Usage](https://drive.google.com/uc?export=view&id=1PsnMoHgkWkukI1rgispKUU6yGh3V7zvp)
 
 Entering an already existing user name will end the script.
+<br />
 ![Usage](https://drive.google.com/uc?export=view&id=1ZocH57VnREIPCaWAeqJGFduiLJ3ypaSf)
