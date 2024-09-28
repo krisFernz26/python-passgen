@@ -9,7 +9,7 @@ A randomized password generator that encrypts the generated password and stores 
 - SHA256 Encryption
 - Save user passwords to a file
 
-## Screenshots
+## Usage
 
 Entering an unused username with generate and store a password.
 <br />
