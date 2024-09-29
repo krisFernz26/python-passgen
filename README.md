@@ -14,7 +14,7 @@ A basic randomized password generator that encrypts the generated password and s
 
 Entering an unused username with generate and store a password.
 <br />
-```
+```console
 $python3 passgen.py
 Enter username: testing 
 Generated Password: '?^&y)cT#h('
@@ -24,7 +24,7 @@ User password saved!
 
 Entering an already existing user name will end the script.
 <br />
-```
+```console
 $python3 passgen.py
 Enter username: testing
 Username already exists!
